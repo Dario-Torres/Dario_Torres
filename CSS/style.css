@@ -1,0 +1,13 @@
+#sidebar{
+  z-index:1;
+  display:none;
+  height:100%;
+  width:15%;
+  background-color: #fff;
+  position: sticky;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #e8b4b9;
+  float:right;
+  top:0;
+}
