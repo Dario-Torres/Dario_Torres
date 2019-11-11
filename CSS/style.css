@@ -1,6 +1,36 @@
+body {
+  background-color:rgb(200, 200, 200, 1);
+}
+
+#Menu_Button {
+  height:70px;
+  width: 70px;
+  background-color: #222222;
+  top:10;
+  right:10;
+  position:fixed;
+  cursor:pointer;
+  border-radius:15%;
+  margin-right:10px;
+  margin-top: 10px;
+  opacity: 1;
+}
+#Menu_Button:hover {
+  opcaity
+}
+
+.bar1, .bar2, .bar3 {
+  display:block;
+  margin: auto;
+  margin-top: 11px;
+  width:40px;
+  height:7px;
+  background-color: #DDD;
+}
+
 #Home {
   width:100%;
-  height:90%;
+  height:100%;
   background-image:url("../images/sequoia.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,6 +56,24 @@
   text-align: center;
 }
 
+.text-entry {
+  display:block;
+  width: 100%;
+  height: 250px;
+  background-color: rgb(200, 200, 200, 1);
+}
+p.title {
+  text-align:center;
+  padding-top: 20px;
+  font: 30px "Lato", sans-serif;
+}
+p.statement-text {
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+  font: 15px sans
+}
+
 p.name {
   color:rgb(255, 255, 255, 1);
   font-size: 45px;
@@ -35,8 +83,16 @@ p.cert {
   font-size: 23px;
 }
 
-#Qualifications {
 
+#Qualifications {
+  width:100%;
+  height:90%;
+  background-image:url("../images/sequoia_garden.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  opacity:.65;
 }
 
 #Contact {
