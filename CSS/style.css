@@ -9,9 +9,21 @@ body {
  * bar1,bar2,bar3 : Classes for the three bars comprising the 
      bars of the icon.
 */
+#Sidebar {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 30%;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color:#222222;
+  opacity:.7;
+}
+
 #Menu_Button {
-  height:10%;
-  width: 10%;
+  height:70px;
+  width: 70px;
   background-color: #222222;
   top:10;
   right:10;
@@ -21,19 +33,36 @@ body {
   margin-right:10px;
   margin-top: 10px;
   opacity: 1;
+  z-index: 2;
 }
 #Menu_Button:hover {
-  opcaity
+  opacity: .80;
 }
 
-.bar1, .bar2, .bar3 {
+#hamburger {
   display:block;
+}
+.bar1, .bar2, .bar3 {
   margin: auto;
   margin-top: 11px;
   width:40px;
   height:7px;
   background-color: #DDD;
 }
+
+#cross{
+  display:none;
+  margin:auto;
+}
+#cross.x1 {
+  transform:rotate(45deg);
+  background-color:#123321;
+}
+#cross.x2 {
+  transform:rotate(-45deg);
+  background-color:#123321;
+}
+
 /*-----------------------------------------------------------*/
 
 /*
@@ -47,7 +76,7 @@ body {
 
 #Home {
   width:100%;
-  height:130%;
+  height: calc(var(--height) * 1px);
   background-image:url("../images/sequoia.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -65,13 +94,6 @@ body {
   border-radius:75%;
 }
 
-.section-title {
-  margin:auto;
-  margin-top:35px;
-  width:50%;
-  background-color:rgb(0, 0, 0, .85);
-  text-align: center;
-}
 
 p.name {
   color:rgb(255, 255, 255, 1);
@@ -90,7 +112,8 @@ p.cert {
 */
 #Qualifications {
   width:100%;
-  height:90%;
+  height:100%;
+  padding-top:25px;
   background-image:url("../images/sequoia_garden.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -99,6 +122,18 @@ p.cert {
   opacity:.65;
 }
 
+#Section_Title.qualification {
+  width: 50%;
+  height:20%;
+  position:relative;
+  
+}
+
+
+/*
+    Qualifications section containing mostly text. Primarily 
+  consisting if text blocks.
+*/
 #Contact {
 
 }
@@ -106,6 +141,15 @@ p.cert {
 /*
    General formatting settings for text entries throughout page.
 */
+
+#Section_Title {
+  display:block;
+  margin:auto;
+  margin-top:35px;
+  width:50%;
+  background-color:rgb(0, 0, 0, .85);
+  text-align: center;
+}
 
 .text-entry {
   display:block;
@@ -119,8 +163,8 @@ p.title {
   font: 30px sans-sarif;
 }
 p.statement-text {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   text-align: left;
   font: 15px monospace;
   text-indent:50px;

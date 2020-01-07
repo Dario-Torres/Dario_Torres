@@ -3,19 +3,29 @@
 	<link rel = "stylesheet" href = "CSS/style.css">
 </head>
 
-<body>
+<body onload="get_resolution()">
 	<script src="scripts/scripts.js"></script>
-	
-	<div id="Menu_Button">
-		<div class="bar1"></div>
-		<div class="bar2"></div>
-		<div class="bar3"></div>
+	  <!--Container for the generic navigation menu button on the top-->
+	<div id="Menu_Button" onclick="sidebar_open()">
+		<div id="hamburger" class="bar1"></div>
+		<div id="hamburger" class="bar2"></div>
+		<div id="hamburger" class="bar3"></div>
+		
+		<div id="cross" class="x1"></div>
+		<div id="cross" class="x2"></div>
 	</div>
 	
+	<div id="Sidebar">
+		
+	</div>
+	
+	  <!--Overall container for the home section-->
 	<div id="Home">
+		  <!--Profile picture-->
 		<img id="Profile-Picture" src = "./images/profile_pic.jpg" width="400px" height="400px">
 		
-		<div class="section-title">
+		  <!--Container for name and titles pertaining hitherto-->
+		<div id="Section_Title" class="home">
 			<p class="name">Jose Dario M Torres</p>
 			<p class="cert">B.S. Computer Science</p>
 			<p class="cert">B.S. Cognitive Science</p>
@@ -23,13 +33,19 @@
 		
 	</div>
 	
+	  <!--Container dividing two sections (Home and Qualifications)-->	
+	    <!-- used primarily to assist in creating Parallax effect -->
 	<div class="text-entry">
 		<p class="title"> Personal Statement</p>
 		<p class="statement-text">Lorem ipsum dolor sit amet, ad wisi tation deterruisset quo, sed te duis porro deleniti. Ne sententiae incorrupte definitiones usu, tamquam adolescens definiebas nec id, ea vix tale oportere. Natum essent vituperata ex usu, everti inermis at nam. Qui at legere regione labitur, at sed postea officiis democritum. Qui modo expetendis ut, malis utroque sed ut. Suas modus noluisse ius no. Pro ex choro tantas ponderum.</p>
         <p class="statement-text">Eleifend reformidans an pri, quot novum ei has. Dicant possim meliore ea has. Graeco expetenda repudiandae in duo. Quis populo aperiam vim ex, vim mentitum accusata at, malis singulis cu qui. Cum an paulo pertinax maluisset, fugit elaboraret his id. Legendos moderatius pri cu, nisl tollit facilis vis ne.</p>			
 	</div>
 	
+	  <!--Overall contianer for the qualification section-->
 	<div id="Qualifications">
+		<div id="Section_Title" class="qualifications">
+			<p class="name">Qualifications</p>
+		</div>
 	</div>
 	
 	<div id="Contact">

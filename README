@@ -1,1 +1,6 @@
-Personal website as a profile for myself.
+Personal site using basic HTML, CSS, and javascript.
+
+Currently, requires work for dynamic sizing and works best currently
+with full-size browsers (i.e. desktop/laptop browsers set to full 
+size) with zoom at 100%. Changing size or zooming in or out can cause 
+elements to overlap indesirably. 
