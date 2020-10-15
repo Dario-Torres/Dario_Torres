@@ -1,21 +1,18 @@
 <head>
 	<title>Jose Dario M Torres</title>
-	<link rel = "stylesheet" href = "CSS/style.css">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="stylesheet" href="CSS/sidebar.css">
 </head>
 
 <body onload="get_resolution()">
 	<script src="scripts/scripts.js"></script>
 	  <!--Container for the generic navigation menu button on the top-->
 	<div id="Menu_Button" onclick="sidebar_open()">
-		<div id="hamburger" class="bar1"></div>
-		<div id="hamburger" class="bar2"></div>
-		<div id="hamburger" class="bar3"></div>
-		
-		<div id="cross" class="x1"></div>
-		<div id="cross" class="x2"></div>
+		<img class="sidebar_icon" src="images/right_arrow.png" alt="Something wrong">
 	</div>
 	
 	<div id="Sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="sidebar_close()">&times;</a>
 		
 	</div>
 	

@@ -1,0 +1,63 @@
+/*
+   Section pertaining to the navigation menu button (top right,
+ three line icon).
+ * Menu_Button : Overall button container. Contains the three 
+     as individual opbjects.
+ * bar1,bar2,bar3 : Classes for the three bars comprising the 
+     bars of the icon.
+*/
+
+
+#Sidebar {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 0;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color:#60605b;
+    opacity:1;
+    transition: .5s;
+  }
+  
+  #Menu_Button {
+    height:10%;
+    width: 5%;
+    background-color: #60605b;
+    top:10;
+    left:0;
+    position:fixed;
+    cursor:pointer;
+    /*border-radius:15%;*/
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    margin-right:10px;
+    margin-top: 10px;
+    opacity: 1;
+    z-index: 2;
+  }
+
+  #Menu_Button:hover {
+    opacity: .9;
+  }
+
+  .sidebar_icon{
+      width: 100%;
+      height: 100%;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #939393;
+  }
+
+  .closebtn:hover{
+      color:#EBEBEB;
+      transition: .3s;
+  }

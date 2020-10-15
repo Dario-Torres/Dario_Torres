@@ -14,15 +14,11 @@ function get_resolution(){
 
 /* Function to control opening and closing of the sidebar navigation menu*/
 function sidebar_open(){
-	document.getElementById("Sidebar").style.display = "block";
-	document.getElementById("hamburger").style.display = "none";
-	document.getElementById("cross").style.display = "block";
-	document.getElementById("Menu_Button").setAttribute("onClick", "sidebar_close()");
+	document.getElementById("Sidebar").style.width = "20%";
+	document.getElementById("Menu_Button").style.width = "none";
 }
 
 function sidebar_close(){
-	document.getElementById("Sidebar").style.display = "none";
-	document.getElementById("hamburger").style.display = "block";
-	document.getElementById("cross").style.display = "none";
-	document.getElementById("Menu_Button").setAttribute("onClick", "sidebar_open()");
+	document.getElementById("Sidebar").style.width = "0";
+	document.getElementById("Menu_Button").style.display = "block";
 }
