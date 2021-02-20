@@ -2,6 +2,7 @@
 	<title>Jose Dario M Torres</title>
 	<link rel="stylesheet" href="CSS/style.css">
 	<link rel="stylesheet" href="CSS/sidebar.css">
+	<link rel="stylesheet" href="CSS/title.css">
 </head>
 
 <body onload="get_resolution()">
@@ -14,44 +15,97 @@
 	<div id="Sidebar">
 		<a href="javascript:void(0)" class="closebtn" onclick="sidebar_close()">&times;</a>
 		<div id="NavContainer">
-			<a href="#About" class="section_nav">About Me</a>
-			<a href="#Work"  class="section_nav">Work History</a>
+			<a href="#Home" class="section_nav">About Me</a>
+			<a href="#Work-Experience"  class="section_nav">Work Esperience</a>
 			<a href="#Qualifications" class="section_nav">Qualifications</a>
 			<a href="#Projects" class="section_nav">Projects</a>
 			<a href="#Contact" class="section_nav">Contact</a>		
 		</div>
 	</div>
 	
+
+	<!-- Opening title for website -->
 	  <!--Overall container for the home section-->
 	<div id="Home">
 		  <!--Profile picture-->
-		<img id="Profile-Picture" src = "./images/profile_pic.jpg" width="400px" height="400px">
+		  <div class="profile-pic-container">
+			<img class="profile_pic" src = "./images/profile_pic.jpg" width="400px" height="400px">
+		  </div>
 		
 		  <!--Container for name and titles pertaining hitherto-->
-		<div id="Section_Title" class="home">
-			<p class="name">Jose Dario M Torres</p>
-			<p class="cert">B.S. Computer Science</p>
-			<p class="cert">B.S. Cognitive Science</p>
-		</div>
+		  <div class="profile-info">
+			  <div class="profile-name">Jose Dario Torres</div>
+			  <div class="profile-title">B.S. Computer Science</div>
+			  <div class="profile-title">B.S. Cognitive Science</div>
+		  </div>
 		
+		  <!--Perosnal Statement-->
+		  <div class="personal-entry">
+			<p class="title"> Who am I?</p>
+			<p class="statement-text">A dude with a passion for Computer Science, Brain Machine Interaction, hiking, and pie. Majored in Comp Sci and Cog Sci in hopes of joing the front line of BMI research.</p>
+			<p class="statement-text">Additionally passionate about programming, web development, software engineering, and anything technology related.</p>
+		  </div>
 	</div>
 	
 	  <!--Container dividing two sections (Home and Qualifications)-->	
 	    <!-- used primarily to assist in creating Parallax effect -->
-	<div class="text-entry">
-		<p class="title"> Personal Statement</p>
-		<p class="statement-text">Lorem ipsum dolor sit amet, ad wisi tation deterruisset quo, sed te duis porro deleniti. Ne sententiae incorrupte definitiones usu, tamquam adolescens definiebas nec id, ea vix tale oportere. Natum essent vituperata ex usu, everti inermis at nam. Qui at legere regione labitur, at sed postea officiis democritum. Qui modo expetendis ut, malis utroque sed ut. Suas modus noluisse ius no. Pro ex choro tantas ponderum.</p>
-        <p class="statement-text">Eleifend reformidans an pri, quot novum ei has. Dicant possim meliore ea has. Graeco expetenda repudiandae in duo. Quis populo aperiam vim ex, vim mentitum accusata at, malis singulis cu qui. Cum an paulo pertinax maluisset, fugit elaboraret his id. Legendos moderatius pri cu, nisl tollit facilis vis ne.</p>			
+	<div class="divider">
+		<!--<img class="divider-image" src="./images/fallen_tree.jpg">-->
 	</div>
 	
 	  <!--Overall contianer for the qualification section-->
-	<div id="Qualifications">
-		<div id="Section_Title" class="qualifications">
-			<p class="name">Qualifications</p>
+	<div id="Work-Experience">
+		<div class="title">
+			<p>Work Experience</p>
+		</div>
+
+		<div class="work-entry">
+			<p class="job-title">Business Analyst</p>
+			<p class="job-location">E & J Gallo Winery</p>
+			<ul class="job-accomplishments">
+				<li class="job-acc">Entry one</li>
+				<li class="job-acc">Entry two</li>
+			</ul>+
 		</div>
 	</div>
 	
+	<!-- Container for Qualifications -->
+	<div id="Qualifications">
+		<div class="title">
+			<p>Qualifications</p>
+		</div>
+
+		<div class="quals">
+			<div class="qual-category skills" onclick="">
+				skills
+			</div> 
+			<div class="qual-category cv" onclick="">
+				curiculum vitae
+			</div>
+			<div class="qual-category certs" onclick="">
+				Certifications
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Contianer for project section. Still may or may not be included -->
+	 <!-- Should contain badges or clickable tags linking projects -->
+	<div id="Projects">
+		<div class="title">
+			<p>Projects</p>
+		</div>
+		
+	</div>
+
+
+	<!-- Container for contact section. Should link rest of social media and offer downloadable Curriculum -->
+		<!-- and resume. -->
 	<div id="Contact">
+		<div class="title">
+			<p>Contact</p>
+		</div>
+
 	</div>
 
 <!--Footer

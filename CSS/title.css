@@ -1,0 +1,20 @@
+#Title{
+    width: auto; 
+    height: auto;
+    z-index: -2;    
+}
+
+.top_image{
+    width:100%;
+    height: calc(var(--height) * 1px);
+    position: fixed;
+    transition: ease-in-out;
+}
+
+.deck_image{
+    width:none;
+    height: calc(var(--height) * 1px);
+    position:fixed;
+    display: none;
+    transition: ease-in-out;
+}

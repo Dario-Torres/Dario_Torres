@@ -24,3 +24,31 @@ function sidebar_close(){
 	document.getElementById("NavContainer").style.display = "none";
 	document.getElementById("Menu_Button").style.display = "block";
 }
+
+function changeImage(){
+	console.log("Test");
+	var next_top = false;
+	var imgs = document.getElementById("carousel").children;
+	for(var i = 0; i<imgs.length; i++){
+		var temp = imgs[i];
+		if (temp.className == "top_image"){
+			next_top = true;
+			temp.className = "deck_image";
+		}else if(temp.className == "deck_image"){
+			if(next_top){
+				temp.className = "top_image";
+				return;
+			}
+		}
+	}
+
+	imgs[0].className = "top_image";
+	imgs[imgs.length-1].className = "deck_image";
+	return;
+
+}
+
+function setCarouselScroll(){
+	console.log("BRUH");
+	setInterval(changeImage,5000);
+}
